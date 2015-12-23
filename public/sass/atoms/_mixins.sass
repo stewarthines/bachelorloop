@@ -1,0 +1,33 @@
+// Useful Mixins
+// Stewart Hines | Oct-Dec 2015 | Other Authors Noted
+
+// = = = = Grid Mixins = = = = //
+
+=gridContainer()
+    width:90%
+    max-width:$gridMaxWidth
+    margin:0 auto
+
+=grid()
+  display:flex
+  flex-wrap:wrap
+  margin-left:-$gridGutters
+  margin-right:-$gridGutters
+
+
+=gridCell($cellWidth: 1)
+  flex: $cellWidth
+  padding-left:$gridGutters
+  padding-right:$gridGutters
+  .demo
+    width:100%
+    padding:$spacingBase
+    margin-bottom:$spacingBase
+    font-weight:400
+    text-align:center
+    border:$basicBorder
+    border-radius:$borderRadius
+    background:$gray06
+
+// Border Basic
+$basicBorder: 1px solid $borderColor
