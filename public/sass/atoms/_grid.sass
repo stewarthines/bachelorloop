@@ -1,14 +1,25 @@
-
-
-
+// Stew's Flex grid
+// = = = = = = = = =
+// Stewart Hines | December 2015
+// Based on: Solved by FlexBox - https://philipwalton.github.io/solved-by-flexbox/demos/grids/
+// Based on: Kraken Framework by Chris Ferdinandi - https://cferdinandi.github.io/kraken/components.html#the-grid
+// Configure the grid in config.sass
+// Grid parts are in mixins.sass
+// = = = = Contents: = = = = //
+// 1. Container & Grid Structure
+// 2. Grid Cells
+// 3. Media Queries
+//  3.A Small Screens
+//  3.B Medium Screens
+// = = = = = = = = = = = = = //
+// = = = = 1. Container & Grid Structure = = = = //
 .container
   +gridContainer()
 
 .grid
   +grid()
 
-//= = = = Grid Cells = = = = //
-
+//= = = = 2. Grid Cells = = = = //
 .grid-cell
   +gridCell()
 
@@ -31,7 +42,10 @@
   +gridCell(0 0 100%)
   margin-right:0
 
+// = = = = 3. Media Queries = = = = //
+// == 3.A Small Screens == //
 @media screen and (max-width:$bpXS)
+  // TODO: Flesh this out a bit more
   .grid-cell,
   .grid-third,
   .grid-two-thirds,
@@ -44,7 +58,10 @@
     margin-bottom:$gridGutters
   .grid-full
     margin-bottom:0
+
+// == 3.B Medium Screens == //
 @media screen and (min-width:$bpXS) and (max-width:$bpSM)
+  // TODO: Think this through a little more, fine tune the width values
   .grid-third,
   .grid-two-thirds,
   .grid-fourth,
