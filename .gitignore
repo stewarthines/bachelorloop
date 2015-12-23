@@ -73,3 +73,10 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# Ignore More Stuff
+# =================
+
+prepros.cfg
+.idea
+*.idea
