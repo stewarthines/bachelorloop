@@ -1,0 +1,85 @@
+:root {
+  font-size: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Open Sans", "Helvetica", sans-serif;
+  color: #5C6576;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  line-height: 1.5rem;
+  background: #F4F4F5;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+}
+
+.text-action {
+  color: #0f93f5;
+}
+
+.text-danger {
+  color: #f44336;
+}
+
+.text-success {
+  color: #46af4a;
+}
+
+.text-warning {
+  color: #ff9800;
+}
+
+.text-muted {
+  color: #9DA2AC;
+}
+
+.spacing-sm {
+  margin-bottom: 1rem !important;
+}
+
+.spacing-base {
+  margin-bottom: 1.5rem !important;
+}
+
+.spacing-md {
+  margin-bottom: 3rem !important;
+}
+
+.action,
+.danger,
+.success {
+  color: white;
+}
+
+.action {
+  background-color: #0f93f5;
+}
+
+.danger {
+  background-color: #f44336;
+}
+
+.success {
+  background-color: #46af4a;
+}
+
+.warning {
+  background-color: #ff9800;
+}
+
+.muted {
+  background-color: #F4F4F5;
+}
+
+/*# sourceMappingURL=master.css.map */
