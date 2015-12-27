@@ -1,0 +1,30 @@
+// Block Templates
+// = = = = = = = =
+// Stewart Hines | December 2015
+// = = = = Contents: = = = = = //
+// = = = = = = = = = = = = = = //
+
+// = = = = 1. Basic Block = = = = //
+$blockBG:$bodyColor
+
+=basicBlock($varBG:$blockBG, $varPadding:$spacingLG)
+	display:block
+	width:100%
+	padding:$spacingLG 0
+	background:$blockBG
+
+	> header,
+	> article,
+	> footer
+		+gridContainer()
+	> header
+		margin-bottom:$spacingBase
+		h2
+			margin-top:0
+	> footer
+		margin-top:$spacingBase
+
+section.block
+	+basicBlock()
+section.block.block-divided
+	border-bottom:$basicBorder

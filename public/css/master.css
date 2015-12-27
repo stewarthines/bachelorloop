@@ -157,7 +157,8 @@ h3,
 }
 
 h4,
-.h4 {
+.h4,
+dt {
   font-size: 14px;
   line-height: 1.5rem;
   font-weight: 600;
@@ -186,6 +187,11 @@ blockquote {
   margin-bottom: 1.5rem;
 }
 
+ul,
+ol {
+  padding-left: 1.5rem;
+}
+
 ul.no-style,
 ol.no-style {
   list-style: none;
@@ -202,6 +208,10 @@ ul ul, ol ol, ul ol, ol ul {
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 1.5rem;
+}
+
+dd {
+  margin-bottom: 1rem;
 }
 
 hr {
@@ -235,6 +245,12 @@ ul.no-style,
 ol.no-style {
   list-style: none;
   margin-left: 0;
+}
+
+mark {
+  background: #FEEA3A;
+  padding: 2px;
+  border-radius: 4px;
 }
 
 .container {
@@ -565,6 +581,97 @@ ol.no-style {
   font-size: 1.125rem;
 }
 
+section.block {
+  display: block;
+  width: 100%;
+  padding: 4.5rem 0;
+  background: white;
+}
+
+section.block > header,
+section.block > article,
+section.block > footer {
+  width: 90%;
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+section.block > header {
+  margin-bottom: 1.5rem;
+}
+
+section.block > header h2 {
+  margin-top: 0;
+}
+
+section.block > footer {
+  margin-top: 1.5rem;
+}
+
+section.block.block-divided {
+  border-bottom: 1px solid #d4d4d4;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table thead {
+  text-align: left;
+  border-bottom: 2px solid #d4d4d4;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+table thead tr th:first-child {
+  border-left: none;
+  border-top-left-radius: 4px;
+}
+
+table thead tr th:last-child {
+  border-top-right-radius: 4px;
+}
+
+table td,
+table th {
+  padding: 0.625rem;
+}
+
+table tr {
+  height: 1.5rem;
+  border-bottom: 1px solid #d4d4d4;
+  background-color: white;
+}
+
+table tr:last-child {
+  border-bottom: none;
+}
+
+table.table-bordered thead {
+  border: 1px solid #d4d4d4;
+  background-color: #f0f0f0;
+}
+
+table.table-bordered thead tr {
+  border: none;
+  background-color: transparent;
+}
+
+table.table-bordered td,
+table.table-bordered th {
+  border-left: 1px solid #d4d4d4;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+table.table-bordered tr {
+  border-right: 1px solid #d4d4d4;
+}
+
+table.table-stripped tr:nth-child(odd) {
+  background-color: #f0f0f0;
+}
+
 .color {
   margin-bottom: 1.5rem;
   padding: 0.625rem;
@@ -634,4 +741,15 @@ ol.no-style {
 
 .color .color-color.brand-alt {
   background: #0f0f0f;
+}
+
+h3.title {
+  margin-bottom: 1.5rem;
+}
+
+h4.subtitle {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  color: #636363;
+  border-bottom: 1px solid #d4d4d4;
 }

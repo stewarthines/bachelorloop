@@ -59,6 +59,10 @@ blockquote
   margin-top:0
   margin-bottom:$spacingBase
 // == .B Lists ==//
+ul,
+ol,
+  padding-left:$spacingBase
+
 ul.no-style,
 ol.no-style
   list-style:none
@@ -74,6 +78,10 @@ ul ul, ol ol, ul ol, ol ul
   margin-bottom:0
   margin-left: $spacingBase
 
+dt
+  @extend %h4
+dd
+  margin-bottom:$spacingSM
 
 
 hr
@@ -110,3 +118,8 @@ ol.no-style,
 %noStyle
   list-style:none
   margin-left:0
+
+mark
+  background:#FEEA3A
+  padding:2px
+  border-radius:$borderRadius

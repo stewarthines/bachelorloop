@@ -1,0 +1,57 @@
+// Tables
+// = = = =
+// Stewart Hines | Date
+// = = = = Contents: = = = = = //
+// 1. Basic Table
+// = = = = = = = = = = = = = = //
+
+// = = = = 1. Basic Table = = = = //
+table
+	border-collapse: collapse
+	width:100%
+
+	thead
+		text-align:left
+		border-bottom:2px solid $borderColor
+		border-top-left-radius: $borderRadius
+		border-top-right-radius: $borderRadius
+		
+		tr th:first-child
+			border-left:none
+			border-top-left-radius: $borderRadius
+		tr th:last-child
+			border-top-right-radius: $borderRadius
+
+	td,
+	th
+		padding:$spacingXS
+
+	tr
+		height:$spacingBase
+		border-bottom:$basicBorder
+		background-color:$bodyColor
+		&:last-child
+			border-bottom:none
+// = = = = 2. Table Border = = = = //
+table.table-bordered
+
+	thead
+		border:$basicBorder
+		background-color:$gray06
+		tr
+			border:none
+			background-color:transparent
+	td,
+	th
+		border-left:$basicBorder
+		border-bottom:$basicBorder
+	tr
+		border-right:$basicBorder
+
+// = = = = 3. Table Stripped = = = = //
+table.table-stripped
+	tr:nth-child(odd)
+		background-color:$gray06
+
+// = = = = 4. Table Condensed = = = = //
+table.table-condensed
