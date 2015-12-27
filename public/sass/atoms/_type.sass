@@ -50,18 +50,31 @@ blockquote
   border-radius:$borderRadius
   background:$gray06
 
-p, ul, ol, pre, table, blockquote
+p,
+ul,
+ol,
+pre,
+table,
+blockquote
   margin-top:0
   margin-bottom:$spacingBase
+// == .B Lists ==//
+ul.no-style,
+ol.no-style
+  list-style:none
+  margin-left:0
+  padding-left:0
 
+li
+  line-height:$spacingBase
+  margin-bottom:$spacingXS
+// Nested Lists
 ul ul, ol ol, ul ol, ol ul
   margin-top:0
   margin-bottom:0
   margin-left: $spacingBase
 
-li
-  line-height:$spacingBase
-  margin-bottom:$spacingSM
+
 
 hr
   height:1px

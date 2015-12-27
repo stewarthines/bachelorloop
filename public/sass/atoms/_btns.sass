@@ -1,0 +1,28 @@
+// Buttons
+// = = = =
+// Stewart Hines | December 2015
+// = = = = Contents: = = = = = //
+// 1. Basic Buttons
+// 2. Button Colors
+// 3. Button Sizes
+// = = = = = = = = = = = = = = //
+// = = = = 1. Basic Button = = = = //
+.btn
+	// Comment out the +btnAnimated() for static buttons
+	+basicBtn()
+	+btnAnimated()
+
+.btn.btn-animated
+	+btnAnimated()
+
+// = = = = 2. Button Colors = = = = //
+.btn-secondary
+	+basicBtn($varFontColor:$fontColor, $varBGColor:$gray06)
+
+.btn.btn-brand
+	+basicBtn($varBGColor:$brandBase)
+
+// = = = = 3. Button Sizes = = = = //
+.btn.btn-lg
+		padding:$spacingSM $spacingBase
+		font-size:$fontSizeLG

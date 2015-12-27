@@ -1,0 +1,29 @@
+// Animations
+// = = = =
+// Stewart Hines | December 2015 | Other Authors Noted
+// = = = = Contents: = = = = = //
+// 1. Button Animations
+// = = = = = = = = = = = = = = //
+
+// = = = = 1. Button Animations = = = = //
+@keyframes btnMouseEnter
+	0%
+		transform:scale(1)
+		box-shadow:$z1-shadow
+	50%
+		transform:scale(1.09)
+		box-shadow:$z3-shadow
+	100%
+		transform:scale(1.05)
+		box-shadow:$z2-shadow
+
+@keyframes btnMouseLeave
+	0%
+		transform:scale(1.05)
+		box-shadow:$z2-shadow
+	50%
+		transform:scale(1.09)
+		box-shadow:$z3-shadow
+	100%
+		transform:scale(1)
+		box-shadow:$z1-shadow

@@ -31,3 +31,37 @@
 
 // Border Basic
 $basicBorder: 1px solid $borderColor
+
+// = = = = Buttons = = = = //
+
+// == .A Basic Button
+=basicBtn($varFontColor:white, $varBGColor:$action)
+	display:inline-block
+	padding:$spacingXS $spacingBase
+	color:$varFontColor
+	font-weight:800
+	text-decoration:none
+	border-color:darken($varBGColor,11)
+	border-radius:$borderRadius
+	border-style: solid
+	border-width:1px
+	box-shadow:$z1-shadow
+	background-color:$varBGColor
+	cursor: pointer
+	transition:box-shadow $defaultTransition, background-color $defaultTransition, border-color $defaultTransition
+
+	&:hover
+		box-shadow:$z2-shadow
+		background-color:darken($varBGColor,11)
+		border-color:darken($varBGColor,21)
+		transition:box-shadow $defaultTransition, background-color $defaultTransition
+
+// == .B Animated Buttons ==//
+=btnAnimated()
+	+basicBtn()
+	transform:scale(1)
+	animation:btnMouseLeave $defaultAnimation
+
+	&:hover
+		animation: btnMouseEnter $defaultAnimation
+		transform:scale(1.05)
