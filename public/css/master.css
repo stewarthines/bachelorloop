@@ -149,7 +149,8 @@ h2,
 }
 
 h3,
-.h3 {
+.h3,
+.nav-brand {
   font-size: 1.5rem;
   line-height: 1.5rem;
   margin-top: 1.5rem;
@@ -193,7 +194,8 @@ ol {
 }
 
 ul.no-style,
-ol.no-style {
+ol.no-style,
+.nav-menu .nav {
   list-style: none;
   margin-left: 0;
   padding-left: 0;
@@ -670,6 +672,59 @@ table.table-bordered tr {
 
 table.table-stripped tr:nth-child(odd) {
   background-color: #f0f0f0;
+}
+
+.global-header {
+  position: relative;
+  z-index: 1000;
+  color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  background: #0f0f0f;
+}
+
+.nav-wrap {
+  width: 90%;
+  max-width: 90rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  height: 4.5rem;
+}
+
+.nav-brand {
+  flex: 1 0 auto;
+  order: 1;
+  margin-top: 0;
+}
+
+.nav-brand .brand {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-menu {
+  flex: 1 0 auto;
+  order: 2;
+}
+
+.nav-menu .nav {
+  display: flex;
+  align-items: flex-end;
+  align-content: center;
+  justify-content: flex-end;
+  margin-bottom: 0;
+}
+
+.nav-menu .nav li {
+  margin-bottom: 0;
+}
+
+.nav-menu .nav a {
+  padding: 0.625rem 1.5rem;
+  text-decoration: none;
+  color: white;
+  font-weight: 800;
+  height: 4.5rem;
 }
 
 .color {

@@ -1,0 +1,50 @@
+// Global Header
+// = = = = = = =
+// Stewart Hines | December 2015
+// = = = = Contents: = = = = = //
+// 1. Header Wrapper
+// 2. Nav Wrap
+// = = = = = = = = = = = = = = //
+
+// = = = = 1. Header Wrapper = = = = //
+.global-header
+	position:relative
+	z-index: 1000
+	color:white
+	box-shadow:$z1-shadow
+	background:$gray94
+
+// = = = = 2. Nav Wrap = = = = //
+.nav-wrap
+	+gridContainer()
+	display:flex
+	align-items: center
+	height:$spacingLG
+.nav-brand
+	@extend %h3
+	flex:1 0 auto
+	order:1
+	margin-top:0
+	.brand
+		color:white
+		text-decoration:none
+
+.nav-menu
+	flex: 1 0 auto
+	order:2
+	.nav
+		@extend %listNoStyle
+		display:flex
+		align-items: flex-end
+		align-content: center
+		justify-content:flex-end
+		margin-bottom:0
+
+		li
+			margin-bottom:0
+		a
+			padding:$spacingXS $spacingBase
+			text-decoration:none
+			color:white
+			font-weight:800
+			height:$spacingLG
