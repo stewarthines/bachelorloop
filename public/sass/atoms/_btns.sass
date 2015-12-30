@@ -2,18 +2,22 @@
 // = = = =
 // Stewart Hines | December 2015
 // = = = = Contents: = = = = = //
-// 1. Basic Buttons
+// 1. Basic Types
 // 2. Button Colors
 // 3. Button Sizes
 // = = = = = = = = = = = = = = //
-// = = = = 1. Basic Button = = = = //
+// = = = = 1. Button Types = = = = //
 .btn
-	// Comment out the +btnAnimated() for static buttons
 	+basicBtn()
-	+btnAnimated()
 
 .btn.btn-animated
 	+btnAnimated()
+
+.btn.btn-round
+	+btnRound()
+
+.btn.btn-outline
+	+btnOutline()
 
 // = = = = 2. Button Colors = = = = //
 .btn-secondary
@@ -26,3 +30,8 @@
 .btn.btn-lg
 		padding:$spacingSM $spacingBase
 		font-size:$fontSizeLG
+
+// = = = = 4. Buttons with Material Icons = = = = //
+
+.btn .material-icon
+	margin-right:$spacingBase

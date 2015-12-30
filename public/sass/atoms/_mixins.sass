@@ -66,3 +66,13 @@ $basicBorder: 1px solid $borderColor
 	&:hover
 		animation: btnMouseEnter $defaultAnimation
 		transform:scale(1.05)
+
+// == .C Round Buttons == //
+=btnRound()
+  border-radius:50px !important
+
+// == .D Outline Buttons == //
+=btnOutline($varBGColor:white,$varFontColor:$fontColor, $varBorderColor:$gray06, $varBoxShadow:none)
+  +basicBtn($varFontColor,$varBorderColor)
+  background:$varBGColor
+  box-shadow:$varBoxShadow
